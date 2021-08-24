@@ -1,33 +1,7 @@
 import sys
-import argparse
 import os
 import subprocess
-import re
-try:
-    import urllib.request as urllib2
-except ImportError:
-    import urllib2
-import socket
-import urllib
-import sys
 import json
-import telnetlib
-import glob
-import random
-from multiprocessing import Queue
-import threading
-import base64
-import time
-#import ConfigParser
-from sys import argv
-#from commands import *
-from getpass import getpass
-from xml.dom import minidom
-#from urlparse import urlparse
-import urllib.parse as urlparse
-from optparse import OptionParser
-from time import gmtime, strftime, sleep
-#from probandoxml import *
 import netifaces as ni
 
 global dircompleta
@@ -78,8 +52,8 @@ def correrprog(objetivo,progra,arch,conte):
 	for i in range(len(conte)):
 		for j in range(len(prog)):
 			try:
-				os.system("sudo %s %s -o %s -f %s" % (prog[j],progra+ conte[i],objetivo,fase_1+str(conte[i])[:-3]))  #ejecucion de programa cuando tiene -o y -f
-				print("sudo %s %s -o %s -f %s" % (prog[j],progra + conte[i],objetivo,fase_1+str(conte[i])[:-3]))
+				os.system("%s %s -o %s -f %s" % (prog[j],progra+ conte[i],objetivo,fase_1+str(conte[i])[:-3]))  #ejecucion de programa cuando tiene -o y -f
+				print("%s %s -o %s -f %s" % (prog[j],progra + conte[i],objetivo,fase_1+str(conte[i])[:-3]))
 			except:
 				pass
 
@@ -434,6 +408,8 @@ if __name__ == "__main__":
 	except KeyboardInterrupt:
         	print(" Finishing up...\n")
         	time.sleep(0.25)
+
+
 
 
 
