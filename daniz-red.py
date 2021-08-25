@@ -126,10 +126,10 @@ class color:
 class principal:
 	def __init__(self):
 		clearScr()
-		os.system("rm -r /home/kali/Downloads/Daniz_Red/archivos/hosts/fase_2/*")
-		os.system("rm -r /home/kali/Downloads/Daniz_Red/archivos/hosts/fase_1/*")
-		os.system("rm -r /home/kali/Downloads/Daniz_Red/archivos/hosts/fase_3/*")
-		os.system("rm -r /home/kali/Downloads/Daniz_Red/archivos/hosts/explotacion/*")
+		os.system("rm -r /home/kali/Downloads/Daniz_Red/archivos/hosts/fase_2/* -y")
+		os.system("rm -r /home/kali/Downloads/Daniz_Red/archivos/hosts/fase_1/* -y")
+		os.system("rm -r /home/kali/Downloads/Daniz_Red/archivos/hosts/fase_3/* -y")
+		os.system("rm -r /home/kali/Downloads/Daniz_Red/archivos/hosts/explotacion/* -y")
 		clearScr()
 		print (color.HEADER+"************************* DaNiz Red Team*************************"+ color.END+ '''
 			''' + color.OKBLUE + '''
